@@ -1,16 +1,15 @@
 class Team
 
-  attr_reader :name, :power, :bio
-
-@@all = []
-
-  def initialize(name, power, bio)
+  attr_reader :name, :motto
+  
+  @@all = []
+  
+  def initialize(name, motto)
     @name = name
-    @power = power
-    @bio = bio
+    @motto = motto
     @@all << self
   end
-
+  
   def self.all
     @@all
   end
