@@ -7,5 +7,6 @@ class Team
     @power = power
     @bio = bio
     @@all << self
+  end
 
 end
