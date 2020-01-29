@@ -6,5 +6,6 @@ class Team
     @name = name
     @power = power
     @bio = bio
+    @@all << self
 
 end
