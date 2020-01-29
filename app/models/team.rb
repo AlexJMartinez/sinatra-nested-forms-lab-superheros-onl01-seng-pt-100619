@@ -2,6 +2,7 @@ class Team
 
   attr_reader :name, :power, :bio
 
+@@all = []
   def initialize(name, power, bio)
     @name = name
     @power = power
