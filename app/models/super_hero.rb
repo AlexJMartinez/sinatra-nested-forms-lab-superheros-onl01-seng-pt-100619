@@ -1,17 +1,20 @@
 class SuperHero
 
-  attr_reader :name, :motto
+  attr_accessor :name, :power, :bio
 
-  @@all = []
+    def self.all
+      @@all ||= []
+    end
 
-  def initialize(name, motto)
-    @name = name
-    @motto = motto
-    @@all << self
-  end
+    def initialize(opts={})
+      @name  = opts[:name]
+      @power = opts[:power]
+      @bio   = opts[:bio]
+      self.save
+    end
 
-  def self.all
-    @@all
-  end
+    def save
+      self.class.all << self
+    end
 
 end
