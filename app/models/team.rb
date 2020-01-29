@@ -1,7 +1,7 @@
 class Team
 
   attr_reader :name, :motto
-  
+
   @@all = []
   
   def initialize(name, motto)
@@ -9,7 +9,7 @@ class Team
     @motto = motto
     @@all << self
   end
-  
+
   def self.all
     @@all
   end
