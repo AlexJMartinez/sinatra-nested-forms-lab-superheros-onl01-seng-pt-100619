@@ -4,5 +4,6 @@ class SuperHero
 
   def initialize(name, motto)
     @name = name
+    @motto = motto
 
 end
