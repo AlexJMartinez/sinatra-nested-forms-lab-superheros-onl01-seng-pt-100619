@@ -6,5 +6,6 @@ class SuperHero
     @name = name
     @motto = motto
     @@all << self
+  end
 
 end
