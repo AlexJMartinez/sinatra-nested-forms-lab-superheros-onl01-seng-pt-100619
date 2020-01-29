@@ -1,17 +1,10 @@
 class Team
 
-  attr_reader :name, :motto
+  attr_accessor :name, :motto
 
-  @@all = []
-  
-  def initialize(name, motto)
-    @name = name
-    @motto = motto
-    @@all << self
-  end
-
-  def self.all
-    @@all
-  end
+ def initialize(opts={})
+   @name  = opts[:name]
+   @motto = opts[:motto]
+ end
 
 end
